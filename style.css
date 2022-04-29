@@ -1,0 +1,418 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(190, 183, 164);
+    font-size: 20px;
+}
+
+*, div {
+    /*border: 1px solid red; */
+}
+
+a {
+    color: rgb(255, 157, 71);
+}
+
+.quote {
+    margin: auto;
+    font-size: 30px;
+}
+
+#overall {
+    padding-top: 100px;
+}
+
+.overall-progress {
+    height: 50px;
+    width: 110%;
+    color: rgb(255, 157, 71);
+    box-shadow: 2px 2px 15px grey;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 252);
+}
+
+#overall-bar {
+    height: 50px;
+}
+
+.navigation {
+    position: fixed;
+    left: 0px;
+    height: 60px;
+    background-color: rgb(255, 157, 71);
+    top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 2px 2px 25px rgb(88, 88, 88);
+}
+
+.nav {
+    width: 100%;
+    align-items: center;
+}
+
+.navigation a {
+    color: rgb(255, 255, 252);
+    text-shadow: 1px 1px 1px rgb(136, 136, 136);
+}
+
+#navFirstLink {
+    margin-left: 40px;
+}
+
+#navFinalLink {
+    margin-right: auto;
+}
+
+.card-body {
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.card-body .row {
+    justify-content: center;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+button p {
+    color: rgb(255, 157, 71);
+    margin: 0;
+    font-size: 28px;
+}
+
+h5 b {
+    font-size: 28px;
+    color:rgb(41, 41, 41);
+}
+
+.indent {
+    text-indent: 50px;
+}
+
+.movement, .technique, .mobility {
+    margin-top: 10px;
+    color:rgb(41, 41, 41);
+    background-color: rgb(190, 183, 164);
+}
+
+#movementHeader, #techniqueHeader, #mobilityHeader {
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 3px 0px;
+}
+
+#movementHeader h4, #techniqueHeader h4, #mobilityHeader h4 {
+    margin: auto;
+    font-size: 40px;
+}
+  
+.movementLinks, .techniqueLinks, .mobilityLinks {
+    overflow: scroll;
+    height: 495px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 252);
+    text-align: center;
+}
+
+.movementLinks .row, .techniqueLinks .row, .mobilityLinks .row {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid rgba(131, 131, 131, 0.692);
+    font-size: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.movementLinks .row:first-child, .techniqueLinks .row:first-child, .mobilityLinks .row:first-child {
+    border-top: 0px;
+}
+
+.button {
+    margin-right: 1%;
+    border: none;
+    background-color: rgb(255, 255, 252);
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 170px;
+    opacity: 1;
+    text-shadow: 1px 1px 1px rgb(226, 226, 226);
+    box-shadow: 2px 2px 5px grey;
+    color: rgb(255, 157, 71);
+}
+
+.card {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 3px;
+    background-color: rgb(255, 255, 252);
+}
+
+#scheduleHeader, #prHeader, #pacesHeader, #proficiencyHeader, #videosHeader {
+    width: 80%;
+}
+
+.section {
+    padding-top: 60px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.schedule {
+    width: 100%;
+    justify-content: center;
+}
+
+.table {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.table .col-8 {
+    padding: 0;
+}
+
+#videos {
+    margin-bottom: 70px;
+}
+
+#videos .row {
+    justify-content: center;
+}
+
+.prPerson {
+    margin-top: 10px;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    color: rgb(41, 41, 41);
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 252);
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 200px;
+}
+
+table td, table th {
+    border: 1px solid #dddddd;
+}
+
+table tr:first-child th {
+    border-top: 0;
+    border-bottom: 3px solid #dddddd;
+    vertical-align: middle;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child, table tr th:first-child {
+    border-left: 0;
+    border-right: 3px solid #dddddd;
+}
+table tr td:last-child, table tr th:last-child {
+    border-right: 0;
+}
+
+.progress {
+    height: 30px;
+    width: 100%;
+    color: rgb(255, 157, 71);
+    box-shadow: 2px 2px 15px grey;
+    border-radius: 15px;
+}
+
+.progress-bar {
+    background-color: rgb(255, 157, 71);
+    border-radius: 15px;
+}
+
+#bars {
+    width: 100%;
+    justify-content: center;
+}
+
+#bars .row{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+    height: auto;
+}
+
+.entry {
+    width: 20%;
+}
+
+.col-7, .col-3 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+#a, #b, #c, #d, #e, #f, #g {
+    margin: 0;
+    height: auto;
+    text-align: right;
+    width: 100%;
+}
+
+.submitScore {
+    margin: auto;
+    width: fit-content;
+}
+
+#prHeader, #proficiencyHeader, #videosHeader {
+    width: 80%;
+}
+
+.sectionHeader {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    font-size: 55px;
+    color: rgb(41, 41, 41);
+    padding-bottom: 5px;
+}
+
+#videoGroups {
+    width: 83%;
+}
+
+.sectionHeader > p {
+    font-size: 55px;
+    text-shadow: 2px 2px 3px gray;
+    margin: 0px;
+}
+
+select, #score, #submit {
+    background-color: rgb(255, 255, 252);
+    border-radius: 7px;
+    height: 35px;
+    box-shadow: 2px 2px 5px grey;
+    border: none;
+    color:rgb(41, 41, 41);
+    width: fit-content;
+}
+
+#demoForm, #proficiency {
+    width: fit-content;
+}
+
+#score {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.fitnessbox {
+    width: 100%;
+}
+
+.fitnessScore {
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+
+.fitnessScore p {
+    width: auto;
+    margin-bottom: 0px;
+}
+
+#fitnesstitle {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(41, 41, 41);
+}
+
+#fitnesslevel {
+    font-size: 50px;
+    font-weight: bolder;
+    color:rgb(41, 41, 41);
+}
+
+#previous {
+    overflow: scroll;
+    max-height: 470px;
+}
+
+.spacing {
+    margin-bottom: 15px;
+}
+
+.header {
+    font-size: 24px;
+}
+
+.submitScore {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(255, 157, 71);
+    background-color: rgb(255, 255, 252);
+    color:rgb(255, 157, 71);
+}
+
+.submitScore:hover {
+    border: 1px solid rgb(255, 255, 252);
+    background-color: rgb(255, 157, 71) ;
+    color:rgb(255, 255, 252);
+}
+
+.card-body p {
+    margin-bottom: 0px;
+}
+
+.collapse .card {
+    width: 98%;
+    padding: 5px;
+}
+
+.card .collapse {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+
+    .headerButton {
+      display: none;
+    }
+    .table .col-8 {
+        justify-content: left;
+    }
+
+    .table {
+        margin-right: 25%;
+    }
+
+}
